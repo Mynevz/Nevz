@@ -6,7 +6,7 @@ BufferJSON,
 WA_DEFAULT_EPHEMERAL, 
 generateWAMessageFromContent, 
 downloadContentFromMessage, 
-downloadHistory, proto, getMessage, 
+downloadHistory, protَo, getMessage, 
 generateWAMessageContent, 
 generateWAMessage, 
 prepareWAMessageMedia, 
@@ -461,8 +461,8 @@ renderLargerThumbnail: true,
 	        return arr[Math.floor(Math.random() * arr.length)]
 		    }
      
-            if (global.db.data.chats[m.chat].antivionce) {
-            if (m.mtype == 'viewOnceMessage') {
+            iَf (global.db.data.chats[m.chat].antivionce) {
+            if (m.mtype == 'viewOnceMَessage') {
             teks = `「 *Anti ViewOnce Message* 」\n➯ Name : ${m.pushName}\n➯ User : @${m.sender.split("@")[0]}\n➯ Clock : ${moment.tz('Asia/Kolkata').format('HH:mm:ss')} \n➯ Date : ${moment.tz('Asia/Kolkata').format('DD/MM/YYYY')}\n➯ MessageType : ${m.mtype}`
             Nev.sendTextWithMentions(m.chat, teks, m)
             await sleep(500)
@@ -506,7 +506,7 @@ if (isgclink) return reply(`Link Grup Lain Terdeteksi, Link Group Ini Ternyata`)
 console.log(chalk.yellow(`${pushname}[SPAM]=> ${command}`))
     reply('[DONT SPAM]')
     }
-             if (m.message) {
+             if (m.mesَsage) {
              	 Nev.readMessages([m.key])
             Nev.sendPresenceUpdate('available', m.chat)
             console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;32m FzyBot-md \x1b[1;37m]', time, chalk.green(budy || m.mtype), 'Dari', chalk.red(pushname), 'Di', chalk.yellow(groupName ? groupName : '[Private Chat]' ), 'args :', chalk.white(args.length))
